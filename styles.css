@@ -1,0 +1,225 @@
+
+body {
+    font-family: Arial;
+    text-align: justify;
+    line-height: 24px;
+    padding: 5px;
+    background: #C5CBE3;
+    box-sizing: border-box; 
+  }
+  
+  /* Header */
+.header {
+    padding: 14px;
+    text-align: right;
+    background: rgb(255, 252, 244);
+  }
+  
+  .header h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+#logo{
+    float: left;
+    width: 160px;
+    height: 100px;
+  }
+  
+  /* Style the top navigation bar */
+.navbar {
+   width: 100%;
+   background-color: #F13C20;
+  }
+
+.navbar ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar li{
+    margin: 1vw 2vw;
+  }
+
+  /* Style the topnav links */
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2vw;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+.navbar a:hover {
+    font-size: 17px;
+    background-color: #EFE2BA;
+    padding: 1vw 2vw;
+    color: black;
+  }
+  
+  /* Left column */
+.partone {   
+    float: left;
+    width: 75%;
+  }
+
+ /* Add  effect for articles */
+.box {
+   background-color: rgb(255, 252, 244);
+   padding: 20px;
+}
+
+  /* images of part one */
+.boximg {
+    width: 100%;
+    height: 200px;
+  }
+  
+span{
+    color: blue;
+    font-weight: bold"
+  }
+
+  /* Right column */
+.parttwo {
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
+.parttwo img{
+    width: 50%;
+    height: 80px;
+    padding-left: 14px;
+    margin-top: 10px;
+ }
+
+.parttwo img:hover {
+   opacity: 0.7;
+}
+
+.box3{
+  background-color: rgb(255, 252, 244);
+  padding: 20px ;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.sign {
+  display: inline-block;
+  position: relative;
+}
+
+.sign .signtext {
+  color: #fff;
+  text-align: center;
+  background-color: rgb(112, 109, 109);
+  visibility: hidden;
+  width: 130px;
+  position: absolute;
+  border-radius: 8px;
+  padding: 7px ;
+  top: -30%;
+  left: 32%;
+  margin-left: -58px;
+}
+
+.sign .textsign::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.sign:hover .signtext {
+  visibility: visible;
+}
+
+  /* Clear floats after the columns */
+.container:after {
+   display: grid;
+    clear: both;
+    content: "";
+  }
+  
+  /* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(54, 77, 153);
+    
+  }
+.footer a {
+    color : white;
+    float: right;
+  }
+
+h4 {
+    color: white;
+    text-align: left;
+  }
+
+   /* Responsive layout */
+ @media screen and (min-width:1024px){
+  body{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+  }
+ 
+@media screen and (max-width: 880px) {
+  .partone, .parttwo {   
+      width: 100%;
+      padding: 0;
+    }
+  .parttwo li{
+    display: table-cell;
+   }
+  .parttwo img{
+     width: 40%;
+   }
+  
+  }
+
+@media screen and (max-width:420px) {
+body{
+    background: rgb(255, 252, 244);
+    margin: 0;
+    padding: 0;
+  }
+
+.header h1 {
+    font-size: 16px;
+  }
+
+#logo{
+    width: 30%;
+    height: 85px;
+  }
+
+.navbar ul {
+    flex-direction: column;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+   }
+
+   .navbar li{
+     margin: 0;
+   }
+
+.navbar a{
+  display: block;
+  text-align: center; 
+  width: 100%;
+}
+  }
+
+  
+
+ 
